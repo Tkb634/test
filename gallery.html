@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            GALLERY
+        </title>
+        <meta name="viewport"content ="width=device-width, intial-scale=1">
+        <link rel="stylesheet" href="gall.css" >
+
+    </head>
+    <body>
+        <div class="product">
+            <div class="product-small-img">
+                <img src="a.jpg" onclick="myFunction(this)">
+                <img src="b.jpg" onclick="myFunction(this)">
+                <img src="c.jpg"onclick="myFunction(this)">
+                <img src="d.jpg"onclick="myFunction(this)">
+                <img src="e.jpg"onclick="myFunction(this)">
+
+        </div>
+        <div class="img-container">
+            <img id="imageBox"src="e.jpg">
+        </div>
+        <script>
+            function myFunction(smallImg)
+            {
+                var fullImg= document.getElementById("imageBox")
+                fullImg.src =smallImg.src;
+            }
+        </script>
+        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; color:blue">
+            <b>
+                <u>
+            KINDLY CLICK ON SMALL IMAGES TO SEE THE FULL IMAGE
+                </u>
+            </b>
+        </p>
+    </body>
+</html>
